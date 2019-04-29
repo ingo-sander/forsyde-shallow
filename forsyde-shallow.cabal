@@ -42,32 +42,32 @@ Library
   exposed-modules: ForSyDe.Shallow
                  , ForSyDe.Shallow.Core
                  , ForSyDe.Shallow.Core.Signal
-                 , ForSyDe.Shallow.Core.Vector
-                 , ForSyDe.Shallow.Core.AbsentExt
-                 , ForSyDe.Shallow.MoC
-                 , ForSyDe.Shallow.MoC.CT
-                 , ForSyDe.Shallow.MoC.Synchronous
-                 , ForSyDe.Shallow.MoC.Synchronous.Lib
-                 , ForSyDe.Shallow.MoC.Synchronous.Process
-                 , ForSyDe.Shallow.MoC.Synchronous.Stochastic
-                 , ForSyDe.Shallow.MoC.Adaptivity
-                 , ForSyDe.Shallow.MoC.Untimed
-                 , ForSyDe.Shallow.MoC.Dataflow
-                 , ForSyDe.Shallow.MoC.SDF
-                 , ForSyDe.Shallow.MoC.CSDF
-                 , ForSyDe.Shallow.MoC.SADF
-                 , ForSyDe.Shallow.MoC.DomainInterface
-                 , ForSyDe.Shallow.MoC.MoCInterface
-                 , ForSyDe.Shallow.Utility
-                 , ForSyDe.Shallow.Utility.PolyArith
-                 , ForSyDe.Shallow.Utility.Queue
-                 , ForSyDe.Shallow.Utility.DFT
-                 , ForSyDe.Shallow.Utility.FIR
-                 , ForSyDe.Shallow.Utility.FilterLib
-                 , ForSyDe.Shallow.Utility.Gaussian
-                 , ForSyDe.Shallow.Utility.Memory
-                 , ForSyDe.Shallow.Utility.Matrix
-                 , ForSyDe.Shallow.Utility.BitVector
+--                 , ForSyDe.Shallow.Core.Vector
+--                 , ForSyDe.Shallow.Core.AbsentExt
+--                 , ForSyDe.Shallow.MoC
+--                 , ForSyDe.Shallow.MoC.CT
+--                 , ForSyDe.Shallow.MoC.Synchronous
+--                 , ForSyDe.Shallow.MoC.Synchronous.Lib
+--                 , ForSyDe.Shallow.MoC.Synchronous.Process
+--                 , ForSyDe.Shallow.MoC.Synchronous.Stochastic
+--                 , ForSyDe.Shallow.MoC.Adaptivity
+--                 , ForSyDe.Shallow.MoC.Untimed
+--                 , ForSyDe.Shallow.MoC.Dataflow
+--                 , ForSyDe.Shallow.MoC.SDF
+--                 , ForSyDe.Shallow.MoC.CSDF
+--                 , ForSyDe.Shallow.MoC.SADF
+--                 , ForSyDe.Shallow.MoC.DomainInterface
+--               , ForSyDe.Shallow.MoC.MoCInterface
+--                 , ForSyDe.Shallow.Utility
+--                 , ForSyDe.Shallow.Utility.PolyArith
+--                 , ForSyDe.Shallow.Utility.Queue
+--                 , ForSyDe.Shallow.Utility.DFT
+--                 , ForSyDe.Shallow.Utility.FIR
+--                 , ForSyDe.Shallow.Utility.FilterLib
+--                 , ForSyDe.Shallow.Utility.Gaussian
+--                 , ForSyDe.Shallow.Utility.Memory
+--                 , ForSyDe.Shallow.Utility.Matrix
+--                 , ForSyDe.Shallow.Utility.BitVector
   other-modules:
       Paths_forsyde_shallow
   ghc-options:	-Wall -fno-warn-name-shadowing

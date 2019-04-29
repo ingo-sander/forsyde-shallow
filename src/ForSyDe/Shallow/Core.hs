@@ -20,13 +20,13 @@
 
 module ForSyDe.Shallow.Core(  
         module ForSyDe.Shallow.Core.Signal,
-        module ForSyDe.Shallow.Core.Vector,
-        module ForSyDe.Shallow.Core.AbsentExt
+        -- module ForSyDe.Shallow.Core.Vector,
+        -- module ForSyDe.Shallow.Core.AbsentExt
         ) where
 
-import ForSyDe.Shallow.Core.Vector
+-- import ForSyDe.Shallow.Core.Vector
 import ForSyDe.Shallow.Core.Signal
-import ForSyDe.Shallow.Core.AbsentExt
+-- import ForSyDe.Shallow.Core.AbsentExt
 
 
 

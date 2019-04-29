@@ -28,14 +28,14 @@ module ForSyDe.Shallow(
 
   -- | The "ForSyDe.Shallow.MoC" module defines the models of
   --   computations included in ForSyDe.
-  module ForSyDe.Shallow.MoC,
+  -- module ForSyDe.Shallow.MoC,
 
   -- | The "ForSyDe.Shallow.Utility" module provides several
   --   additional modules that are useful and convenient in
   --   practice.
-  module ForSyDe.Shallow.Utility
+  -- module ForSyDe.Shallow.Utility
   ) where
 
 import ForSyDe.Shallow.Core
-import ForSyDe.Shallow.MoC
-import ForSyDe.Shallow.Utility
+-- import ForSyDe.Shallow.MoC
+-- import ForSyDe.Shallow.Utility
