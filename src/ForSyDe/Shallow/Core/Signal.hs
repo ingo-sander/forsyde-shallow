@@ -12,32 +12,36 @@
 -- functions operating on it.
 -----------------------------------------------------------------------------
 module ForSyDe.Shallow.Core.Signal(
-  Signal (NullS, (:-)), (-:), (+-+), (!-), 
-  signal, fromSignal,
-  unitS, nullS, headS, tailS, atS, takeS, dropS,
-  lengthS, infiniteS, copyS, selectS, writeS, readS, fanS,
-  foldrS, allS
+  Signal,
+--  (NullS, (:-)), (-:), (+-+), (!-), 
+   signal, fromSignal,
+   unitS
+--  nullS, headS, tailS, atS, takeS, dropS,
+--  lengthS, infiniteS, copyS, selectS, writeS, readS, fanS,
+--  foldrS, allS
   ) where
 
-infixr 5    :-
-infixr 5    -:
-infixr 5    +-+
-infixr 5    !-
+--infixr 5    :-
+--infixr 5    -:
+--infixr 5    +-+
+--infixr 5    !-
 
-
--- | A signal is defined as a list of events. An event has a tag and a value. The tag of an event is defined by the position in the list. A signal is defined as an instance of the classes 'Read' and 'Show'. The signal 1 :- 2 :- NullS is represented as \{1,2\}.
-data Signal a = NullS
-      | a :- Signal a deriving (Eq)
+-- | A signal is defined as a list of events. An event has a tag and a value. The tag of an event is defined by the position in the list. A signal is defined by means of new type and is isomorphic to a list.
+newtype Signal a = Signal [a] deriving (Show, Eq)
 
 -- | The function 'signal' converts a list into a signal.
-signal     :: [a] -> Signal a 
+signal     :: [a] -> Signal a
+signal xs = Signal xs
 
 -- | The function 'fromSignal' converts a signal into a list.
 fromSignal     :: Signal a -> [a]
+fromSignal (Signal xs) = xs
 
 -- | The function 'unitS' creates a signal with one value.
 unitS      :: a -> Signal a
+unitS x = Signal [x]
 
+{-
 -- | The function 'nullS' checks if a signal is empty.
 nullS      :: Signal a -> Bool
 
@@ -112,6 +116,7 @@ foldrS :: (t -> p -> p) -> p -> Signal t -> p
 -- | Checks if all events in a signal are satisfying a predicate
 -- function.
 allS :: (a -> Bool) -> Signal a -> Bool
+
 
 -- Implementation
 
@@ -223,7 +228,7 @@ foldrS k z = go
     go (y:-ys) = y `k` go ys
 
 allS p = foldrS (\a prev -> p a && prev) True
-
+-}
 
 
 
